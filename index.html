@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="m-b-3">
+      <b>Ваше имя:</b><br />
+      <input id="name" class="noBorder" type="text" size="40" />
+      <p class="errorMessageOff">*Поле является обязательным для заполнения</p>
+    </p>
+    <p>
+      <b>Ваш возраст:</b><br />
+      <input type="text" size="40" />
+    </p>
+    <p>
+      <b>Число.месяц.год вашего рождения:</b><br />
+      <input type="text" size="40" />
+    </p>
+    <p>
+      <b>Ваше образование:</b><br />
+      <select>
+        <option value="initial">Начальное</option>
+        <br />
+        <option value="general">Среднее (общее)</option>
+        <br />
+        <option value="professional">Среднее (профессиональное)</option>
+        <br />
+        <option value="higher">Высшее</option>
+      </select>
+      <br />
+    </p>
+    <p>
+      <b>Ваш пол:</b><br />
+      <input type="radio" name="question" value="man" />Мужчина<br />
+      <input type="radio" name="question" value="woman" />Женщина<br />
+      <button id="btn">Отправить</button>
+    </p>    
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="result"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
